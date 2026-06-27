@@ -1,0 +1,6 @@
+# Feenixs Edge SEO Baseline
+User-agent: *
+Allow: /
+
+# Sitemap target
+Sitemap: https://feenixs.com/sitemap.xml
