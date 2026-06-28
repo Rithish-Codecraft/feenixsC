@@ -71,14 +71,6 @@ export default function Contact() {
     }
   };
 
-  // Helper function to safely read json
-  async function resJson(res: Response) {
-    try {
-      return await res.json();
-    } catch {
-      return {};
-    }
-  }
 
   return (
     <div className="min-h-screen bg-background text-slate-900 flex flex-col font-sans relative overflow-hidden">
