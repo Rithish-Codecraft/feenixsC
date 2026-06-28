@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Cpu, Send, Check } from "lucide-react";
 
 export default function Footer() {
@@ -26,7 +27,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-6">
             <Link href="/" className="flex items-center space-x-2">
-              <Cpu className="h-6 w-6 text-brand-primary animate-pulse" />
+              <Image src="/icon.png" alt="Feenixs Icon" width={24} height={24} className="h-6 w-6 object-contain animate-pulse" />
               <span className="text-xl font-bold tracking-tight text-slate-900 text-glow">Feenixs</span>
             </Link>
             <p className="text-slate-650 text-sm max-w-sm leading-relaxed">
