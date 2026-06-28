@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { sendNotificationEmail, buildLeadEmail } from "@/lib/email";
 
 export async function POST(req: Request) {
   try {
@@ -18,9 +17,7 @@ export async function POST(req: Request) {
 
     console.log(`[GATEWAY Leads] Intake logged. Ref: ${referenceId}. Domain: ${domain}, Budget: ${budget}, Timeline: ${timeline}`);
 
-    // Send email notification
-    const emailPayload = buildLeadEmail({ name, email, org, domain, budget, timeline, message, referenceId });
-    await sendNotificationEmail(emailPayload);
+
 
     return NextResponse.json({
       status: "success",

@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { sendNotificationEmail, buildNewsletterEmail } from "@/lib/email";
 
 export async function POST(req: Request) {
   try {
@@ -15,9 +14,7 @@ export async function POST(req: Request) {
 
     console.log(`[GATEWAY Newsletter] Registered subscriber: ${email}`);
 
-    // Send email notification
-    const emailPayload = buildNewsletterEmail({ email });
-    await sendNotificationEmail(emailPayload);
+
 
     return NextResponse.json({
       status: "success",

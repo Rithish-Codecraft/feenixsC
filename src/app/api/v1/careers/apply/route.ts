@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { sendNotificationEmail, buildCareerEmail } from "@/lib/email";
 
 export async function POST(req: Request) {
   try {
@@ -17,9 +16,7 @@ export async function POST(req: Request) {
 
     console.log(`[GATEWAY Careers] Application received for Job ${jobId}. Tracker: ${applicationTracker}. Letter length: ${coverLetter?.length || 0}`);
 
-    // Send email notification
-    const emailPayload = buildCareerEmail({ jobId, fullName, email, fileName, coverLetter, trackerId: applicationTracker });
-    await sendNotificationEmail(emailPayload);
+
 
     return NextResponse.json({
       status: "success",
