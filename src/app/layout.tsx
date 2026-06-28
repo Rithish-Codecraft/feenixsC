@@ -24,9 +24,6 @@ export const metadata: Metadata = {
   title: "Feenixs | Next-Gen Research & AI Platform",
   description: "Operating at the intersection of AI research, distributed systems engineering, and open scientific collaboration.",
   keywords: ["AI Research", "Machine Learning", "Neural Computing", "Distributed Systems", "API Platform", "Science Sandbox"],
-  icons: {
-    icon: '/feenixs_favicon.png?v=2',
-  },
 };
 
 export default function RootLayout({
