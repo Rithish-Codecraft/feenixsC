@@ -41,11 +41,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <Image src="/feenixs_logo.png" alt="Feenixs Logo" width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
-            <span className="text-xl font-bold tracking-tight text-slate-900 font-display">
-              Feenixs
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Image src="/feenixs_wide_logo.png" alt="Feenixs Logo" width={200} height={40} className="h-8 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}
