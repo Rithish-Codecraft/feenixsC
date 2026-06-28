@@ -40,10 +40,16 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/v1/leads", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE",
+          subject: "New Collaboration Lead from Feenixs Website",
+          from_name: "Feenixs Website",
           name: fullName,
           email,
           org,
@@ -55,8 +61,7 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        const data = await resJson(response);
-        setLeadRefId(data.reference_id || `lead_${Math.random().toString(36).substring(2, 9)}`);
+        setLeadRefId(`lead_${Math.random().toString(36).substring(2, 9)}`);
         setSubmitSuccess(true);
       }
     } catch (err) {
