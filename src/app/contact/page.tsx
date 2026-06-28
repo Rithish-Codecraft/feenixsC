@@ -47,7 +47,7 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE",
+          access_key: "93a0c7c7-dded-455e-a206-69d3908f430f",
           subject: "New Collaboration Lead from Feenixs Website",
           from_name: "Feenixs Website",
           name: fullName,
