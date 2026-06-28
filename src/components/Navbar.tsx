@@ -33,15 +33,15 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 shadow-sm"
-          : "bg-transparent py-5"
+        ? "bg-white/80 backdrop-blur-md border-b border-slate-200 py-3 shadow-sm"
+        : "bg-transparent py-5"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image src="/logo.png" alt="Feenixs Logo" width={280} height={56} className="h-12 sm:h-14 w-auto object-contain rounded-[10%]" />
+            <Image src="/logo.png" alt="Feenixs Logo" width={280} height={56} className="h-12 sm:h-14 w-auto object-contain rounded-[17%]" />
           </Link>
 
           {/* Desktop Nav */}
@@ -53,8 +53,8 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`relative px-4 py-2 text-sm font-medium tracking-wide rounded-md transition-colors ${isActive
-                      ? "text-brand-primary"
-                      : "text-slate-600 hover:text-slate-900"
+                    ? "text-brand-primary"
+                    : "text-slate-600 hover:text-slate-900"
                     }`}
                 >
                   {isActive && (
@@ -121,8 +121,8 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`flex items-center px-4 py-3 rounded-md text-base font-medium transition-colors ${isActive
-                        ? "bg-slate-50 text-brand-primary border-l-4 border-brand-primary"
-                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                      ? "bg-slate-50 text-brand-primary border-l-4 border-brand-primary"
+                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                       }`}
                   >
                     {link.name}
