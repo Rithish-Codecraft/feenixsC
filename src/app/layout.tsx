@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: "Operating at the intersection of AI research, distributed systems engineering, and open scientific collaboration.",
   keywords: ["AI Research", "Machine Learning", "Neural Computing", "Distributed Systems", "API Platform", "Science Sandbox"],
   icons: {
-    icon: '/feenixs_favicon.png',
+    icon: '/feenixs_favicon.png?v=2',
   },
 };
 
