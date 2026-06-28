@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image src="/logo.png" alt="Feenixs Logo" width={280} height={56} className="h-12 sm:h-14 w-auto object-contain rounded-[17%]" />
+            <Image src="/logo.png" alt="Feenixs Logo" width={280} height={56} className="h-12 sm:h-14 w-auto object-contain rounded-[18%]" />
           </Link>
 
           {/* Desktop Nav */}
